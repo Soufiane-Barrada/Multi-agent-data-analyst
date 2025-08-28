@@ -1,2 +1,3 @@
-# Multi-agent-data-analyst
-An agentic assistant to gather information and stock performance data, and analyze it using visualizations
+# Multi-Agent Data Analyst
+
+A modular multi-agent system for data analysis and research tasks.

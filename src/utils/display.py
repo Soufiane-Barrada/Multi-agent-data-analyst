@@ -2,6 +2,11 @@ from langchain_core.messages import convert_to_messages
 
 
 def pretty_print_message(message, indent=False):
+    """
+    Args:
+        message: The message to print.
+        indent: Whether to indent the message.
+    """
     pretty_message = message.pretty_repr(html=True)
     if not indent:
         print(pretty_message)
@@ -12,6 +17,11 @@ def pretty_print_message(message, indent=False):
 
 
 def pretty_print_messages(update, last_message=False):
+    """
+    Args:
+        update: The update containing messages.
+        last_message: Whether to print only the last message.
+    """
     is_subgraph = False
     if isinstance(update, tuple):
         ns, update = update
@@ -38,4 +48,4 @@ def pretty_print_messages(update, last_message=False):
 
         for m in messages:
             pretty_print_message(m, indent=is_subgraph)
-        print("\n")
+        print("\n") 
