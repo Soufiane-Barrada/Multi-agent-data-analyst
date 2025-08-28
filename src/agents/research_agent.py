@@ -8,7 +8,7 @@ from ..config.settings import settings
 def create_research_agent(llm = None):
     """
     Args:
-        llm: The language model to use. If None, creates a new ChatOpenAI instance.
+        llm: The language model to use.
 
     """
     if llm is None:

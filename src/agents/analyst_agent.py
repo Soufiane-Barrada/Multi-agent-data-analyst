@@ -8,8 +8,7 @@ from ..config.settings import settings
 def create_analyst_agent(llm= None):
     """
     Args:
-        llm: The language model to use. If None, creates a new ChatOpenAI instance.
-
+        llm: The language model to use.
     """
     if llm is None:
         llm = ChatOpenAI(model=settings.MODEL_NAME)
